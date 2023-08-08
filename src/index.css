@@ -21,17 +21,17 @@ code {
   color: #fff!important;
 }
 .nav_bg li a{color: #fff;}
-.navbar a{color: #fff!important;}
+.navbar a{color: #fff!important;padding: 20px 10px 20px 10px;margin: 0px 15px 0px 15px;}
 a.navbar-brand {
   font-family: 'Pacifico', cursive;
   font-size: 30px;
 }
 
-nav.navbar.navbar-expand-lg.navbar-light {
+/* nav.navbar.navbar-expand-lg.navbar-light {
   width: 250px;
   position: fixed;
   right: 0;
-}
+} */
 .pabsolute{position: absolute;top: 50%;transform: translateY(-50%);padding: 0 40px;width: 40%;}
 .fn60{font-size: 60px;position: relative;font-weight: bold;}
 .fn60::after {
@@ -109,12 +109,19 @@ h1 span{color:#fffc91;}
     max-width: 1536px;
 }
 h1{font-size: 2.75rem!important;line-height: 1.25!important;}
-.container{padding: 6.5rem;}
-.heading{font-weight: bold;font-size: 45px;}
+section{padding: 6.5rem;}
+.heading{font-weight: 500;font-size: 50px;color: #fff;}
 .about_text{
-  font-size: 72px;
+  font-size: 50px!important;
   background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 500;
 }
 p{font-size: 20px;}
+.contactno{text-decoration: none;}
+.main_menu{padding: 30px 40px 0px 40px;}
+nav.navbar {background-color: #FFFFFF0D;backdrop-filter: blur(4px);border-radius: 40px 40px 40px 40px;border: 2px solid #FFFFFF33;padding: 0;}
+.baner_sec{padding-top: 9rem;}
+.banner_text{color: #fff;}
+.banner_text h1{margin-bottom: 1rem;}

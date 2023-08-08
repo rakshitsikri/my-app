@@ -3,7 +3,7 @@ import web from "../images/webdesign.gif";
 
 const Home = () => {
     return (
-        <section id="header" className="nav_bg">
+        <section  className="baner_sec">
             <div className='container'>
                 <div className='row'>
                     <div className='col-md-5'>
