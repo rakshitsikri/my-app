@@ -9,6 +9,9 @@ const Portfolio = () => {
                     <div className='col-md-4'>
                         <h2 className='heading'>My Work</h2>
                     </div>
+                    <div className='col-md-8'>
+                        <div className=''></div>
+                    </div>
                 </div>
             </div>
         </section>

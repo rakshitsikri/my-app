@@ -125,3 +125,33 @@ nav.navbar {background-color: #FFFFFF0D;backdrop-filter: blur(4px);border-radius
 .baner_sec{padding-top: 9rem;}
 .banner_text{color: #fff;}
 .banner_text h1{margin-bottom: 1rem;}
+
+.rolling-text {
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+.rolling-text .block {
+  display: block;
+}
+.rolling-text .block .letter:nth-child(1) {
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.navbar-nav li > a .rolling-text .block .letter {
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  -o-transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1), -webkit-transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.navbar-nav li > a .rolling-text:hover .letter, .geekfolio-nav.animated-text .navigation li > a .rolling-text.play .letter {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}

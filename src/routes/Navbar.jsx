@@ -15,11 +15,46 @@ const Navbar = () => {
                                 </button>
                             </div> */}
                             <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
-                                <li className="nav-item"><a className="nav-link active" aria-current="page" href="/">Home</a></li>
-                                <li className="nav-item"><a className="nav-link" href="/about">About</a></li>
-                                <li className="nav-item"><a className="nav-link" href="/service">Service</a></li>
-                                <li className="nav-item"><a className="nav-link" href="/about">Resume</a></li>
-                                <li className="nav-item"><a className="nav-link" href="/about">Contact</a></li>
+                                <li className="nav-item">
+                                    <a className="nav-link active" aria-current="page" href="/">
+                                        <span class="rolling-text">
+                                            <span class="block"><span class="letter">H</span><span class="letter">O</span><span class="letter">M</span><span class="letter">E</span></span>
+                                            <span class="block"><span class="letter">H</span><span class="letter">O</span><span class="letter">M</span><span class="letter">E</span></span>
+                                        </span>    
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/about">
+                                        <span class="rolling-text">
+                                            <span class="block"><span class="letter">A</span><span class="letter">B</span><span class="letter">O</span><span class="letter">U</span><span class="letter">T</span></span>
+                                            <span class="block"><span class="letter">A</span><span class="letter">B</span><span class="letter">O</span><span class="letter">U</span><span class="letter">T</span></span>
+                                        </span>    
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/service">
+                                        <span class="rolling-text">
+                                            <span class="block"><span class="letter">S</span><span class="letter">E</span><span class="letter">R</span><span class="letter">V</span><span class="letter">I</span><span class="letter">C</span><span class="letter">E</span></span>
+                                            <span class="block"><span class="letter">S</span><span class="letter">E</span><span class="letter">R</span><span class="letter">V</span><span class="letter">I</span><span class="letter">C</span><span class="letter">E</span></span>
+                                        </span>   
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/about">
+                                        <span class="rolling-text">
+                                            <span class="block"><span class="letter">R</span><span class="letter">E</span><span class="letter">S</span><span class="letter">U</span><span class="letter">M</span><span class="letter">E</span></span>
+                                            <span class="block"><span class="letter">R</span><span class="letter">E</span><span class="letter">S</span><span class="letter">U</span><span class="letter">M</span><span class="letter">E</span></span>
+                                        </span>   
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/about">
+                                        <span class="rolling-text">
+                                            <span class="block"><span class="letter">C</span><span class="letter">O</span><span class="letter">N</span><span class="letter">T</span><span class="letter">A</span><span class="letter">C</span><span class="letter">T</span></span>
+                                            <span class="block"><span class="letter">C</span><span class="letter">O</span><span class="letter">N</span><span class="letter">T</span><span class="letter">A</span><span class="letter">C</span><span class="letter">T</span></span>
+                                        </span>   
+                                    </a>
+                                </li>
                             </ul>
                             <a href="tel:8950781500" className='contactno'>+91 895-078-1500</a>
                             </div>
