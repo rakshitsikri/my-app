@@ -155,3 +155,7 @@ nav.navbar {background-color: #FFFFFF0D;backdrop-filter: blur(4px);border-radius
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
 }
+.port_img img{width: 100%;height: 350px;object-fit: cover;}
+.port_text h3{color: #fffc91;font-size: 2rem;margin-top: 1rem;font-family: "Playfair Display",serif;font-weight: bold;margin-bottom: 0;}
+.portfolio_main a{text-decoration: none;}
+.port_text p{color: #fff;font-weight: 300;}
