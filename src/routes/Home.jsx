@@ -1,6 +1,8 @@
 import react from "react";
 import web from "../images/webdesign.gif";
 
+
+
 const Home = () => {
     return (
         <section  className="baner_sec">

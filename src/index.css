@@ -109,7 +109,7 @@ h1 span{color:#fffc91;}
     max-width: 1536px;
 }
 h1{font-size: 2.75rem!important;line-height: 1.25!important;}
-section{padding: 6.5rem;}
+section{padding: 6.5rem 0;}
 .heading{font-weight: 500;font-size: 50px;color: #fff;}
 .about_text{
   font-size: 50px!important;
@@ -159,3 +159,5 @@ nav.navbar {background-color: #FFFFFF0D;backdrop-filter: blur(4px);border-radius
 .port_text h3{color: #fffc91;font-size: 2rem;margin-top: 1rem;font-family: "Playfair Display",serif;font-weight: bold;margin-bottom: 0;}
 .portfolio_main a{text-decoration: none;}
 .port_text p{color: #fff;font-weight: 300;}
+.about_img{width: 25vw;margin: 0 auto;height: 400px;}
+.about_img img{width: 100%; height: 100%;object-fit: cover;}
