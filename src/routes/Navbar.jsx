@@ -17,41 +17,41 @@ const Navbar = () => {
                             <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
                                     <a className="nav-link active" aria-current="page" href="/">
-                                        <span class="rolling-text">
-                                            <span class="block"><span class="letter">H</span><span class="letter">O</span><span class="letter">M</span><span class="letter">E</span></span>
-                                            <span class="block"><span class="letter">H</span><span class="letter">O</span><span class="letter">M</span><span class="letter">E</span></span>
+                                        <span className="rolling-text">
+                                            <span className="block"><span className="letter">H</span><span className="letter">O</span><span className="letter">M</span><span className="letter">E</span></span>
+                                            <span className="block"><span className="letter">H</span><span className="letter">O</span><span className="letter">M</span><span className="letter">E</span></span>
                                         </span>    
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/about">
-                                        <span class="rolling-text">
-                                            <span class="block"><span class="letter">A</span><span class="letter">B</span><span class="letter">O</span><span class="letter">U</span><span class="letter">T</span></span>
-                                            <span class="block"><span class="letter">A</span><span class="letter">B</span><span class="letter">O</span><span class="letter">U</span><span class="letter">T</span></span>
+                                        <span className="rolling-text">
+                                            <span className="block"><span className="letter">A</span><span className="letter">B</span><span className="letter">O</span><span className="letter">U</span><span className="letter">T</span></span>
+                                            <span className="block"><span className="letter">A</span><span className="letter">B</span><span className="letter">O</span><span className="letter">U</span><span className="letter">T</span></span>
                                         </span>    
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/service">
-                                        <span class="rolling-text">
-                                            <span class="block"><span class="letter">S</span><span class="letter">E</span><span class="letter">R</span><span class="letter">V</span><span class="letter">I</span><span class="letter">C</span><span class="letter">E</span></span>
-                                            <span class="block"><span class="letter">S</span><span class="letter">E</span><span class="letter">R</span><span class="letter">V</span><span class="letter">I</span><span class="letter">C</span><span class="letter">E</span></span>
+                                        <span className="rolling-text">
+                                            <span className="block"><span className="letter">S</span><span className="letter">E</span><span className="letter">R</span><span className="letter">V</span><span className="letter">I</span><span className="letter">C</span><span className="letter">E</span></span>
+                                            <span className="block"><span className="letter">S</span><span className="letter">E</span><span className="letter">R</span><span className="letter">V</span><span className="letter">I</span><span className="letter">C</span><span className="letter">E</span></span>
                                         </span>   
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/about">
-                                        <span class="rolling-text">
-                                            <span class="block"><span class="letter">R</span><span class="letter">E</span><span class="letter">S</span><span class="letter">U</span><span class="letter">M</span><span class="letter">E</span></span>
-                                            <span class="block"><span class="letter">R</span><span class="letter">E</span><span class="letter">S</span><span class="letter">U</span><span class="letter">M</span><span class="letter">E</span></span>
+                                        <span className="rolling-text">
+                                            <span className="block"><span className="letter">R</span><span className="letter">E</span><span className="letter">S</span><span className="letter">U</span><span className="letter">M</span><span className="letter">E</span></span>
+                                            <span className="block"><span className="letter">R</span><span className="letter">E</span><span className="letter">S</span><span className="letter">U</span><span className="letter">M</span><span className="letter">E</span></span>
                                         </span>   
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/about">
-                                        <span class="rolling-text">
-                                            <span class="block"><span class="letter">C</span><span class="letter">O</span><span class="letter">N</span><span class="letter">T</span><span class="letter">A</span><span class="letter">C</span><span class="letter">T</span></span>
-                                            <span class="block"><span class="letter">C</span><span class="letter">O</span><span class="letter">N</span><span class="letter">T</span><span class="letter">A</span><span class="letter">C</span><span class="letter">T</span></span>
+                                        <span className="rolling-text">
+                                            <span className="block"><span className="letter">C</span><span className="letter">O</span><span className="letter">N</span><span className="letter">T</span><span className="letter">A</span><span className="letter">C</span><span className="letter">T</span></span>
+                                            <span className="block"><span className="letter">C</span><span className="letter">O</span><span className="letter">N</span><span className="letter">T</span><span className="letter">A</span><span className="letter">C</span><span className="letter">T</span></span>
                                         </span>   
                                     </a>
                                 </li>

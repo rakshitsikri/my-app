@@ -108,7 +108,7 @@ h1 span{color:#fffc91;}
 .section-container {
     max-width: 1536px;
 }
-h1{font-size: 2.75rem!important;line-height: 1.25!important;}
+h1{font-size: 2.75rem;line-height: 1.25;}
 section{padding: 6.5rem 0;}
 .heading{font-weight: 500;font-size: 50px;color: #fff;}
 .about_text{
@@ -161,3 +161,10 @@ nav.navbar {background-color: #FFFFFF0D;backdrop-filter: blur(4px);border-radius
 .port_text p{color: #fff;font-weight: 300;}
 .about_img{width: 25vw;margin: 0 auto;height: 400px;}
 .about_img img{width: 100%; height: 100%;object-fit: cover;}
+.stay_text{color: #fff;font-weight: bold;font-size: 80px;margin-bottom: 3rem;}
+.stay_main ul{padding: 0;}
+.stay_main ul li{display: flex;justify-content: space-between;flex-wrap: wrap;color: #606060;font-weight: 400;border-bottom: 1px solid #606060;padding-bottom: 4rem;margin-bottom: 4rem;}
+.stay_main ul li>div{width: calc(90% / 3);}
+.stay_main ul li>div:last-child{width: 40%;}
+.stay_right>h3{color: #fff;}
+.stay_right>a{color: #fff;text-decoration: none;}

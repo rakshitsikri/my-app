@@ -11,7 +11,7 @@ import 'swiper/css/bundle';
 const Slider = () => {
     return (
       <Swiper
-        navigation
+        navigation={{ clickable: true }}
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000 }}
         spaceBetween={30}
