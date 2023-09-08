@@ -1,4 +1,3 @@
-import react from 'react';
 import React, { useEffect, useRef } from 'react';
 import aboutimg from "../images/971.jpg";
 import gsap from 'gsap';
@@ -46,6 +45,29 @@ const About = () => {
         }, []);
       
 
+        useEffect(() => {
+          const textElement = document.querySelector('.animated-text');
+
+            gsap.fromTo(
+              textElement,
+              {
+                opacity: 0,
+                y: 100,
+              },
+              {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                scrollTrigger: {
+                  trigger: textElement,
+                  start: 'top center', // When to start the animation
+                  end: 'bottom center', // When to end the animation
+                  scrub: true, // Smoothly animates the text as you scroll
+                },
+              }
+            );
+          }, []);
+
       
 
     return (
@@ -54,7 +76,7 @@ const About = () => {
                 <div className='about_img image' ref={imageRef}>
                     <img src={aboutimg} alt="" style={{ width: '100%' }} className='scroll_img' style={{ width: '100%' }} />
                 </div>
-                <h1 className='about_text'>I'm a UI/UX designer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me. Delivering work within time and budget which meets client’s requirements is our moto.</h1>
+                <h1 className='about_text animated-text'>I'm a UI/UX designer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me. Delivering work within time and budget which meets client’s requirements is our moto.</h1>
             </div>
         </section>
     );
@@ -63,3 +85,4 @@ const About = () => {
 
 export default About;
 
+  
