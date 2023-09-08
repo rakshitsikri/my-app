@@ -1,13 +1,58 @@
 import react from 'react';
+import React, { useEffect, useRef } from 'react';
 import aboutimg from "../images/971.jpg";
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+
 
 
 const About = () => {
+
+  const imageRef = useRef(null); // Create a ref for the image element
+  const startWidth = 500; // Specify the start width
+  const endWidth = '100%'; // Specify the end width
+
+    useEffect(() => {
+        // Define the animation
+        const animation = gsap.from(imageRef.current, {
+            width: startWidth, // Start with the specified start width
+            duration: 200,
+            scrollTrigger: {
+              trigger: imageRef.current, // Use the image as the trigger
+              start: 'top center',
+              end: 'bottom center',
+              scrub: true,
+            },
+          });
+      
+          // Set the end width using a second animation
+          gsap.to(imageRef.current, {
+            width: endWidth,
+            scrollTrigger: {
+              trigger: imageRef.current,
+              start: 'top center',
+              end: 'bottom center',
+              scrub: true,
+            },
+          });
+      
+          return () => {
+            animation.kill();
+          };
+        }, []);
+      
+
+      
+
     return (
         <section>
             <div className='container'>
-                <div className='about_img'>
-                    <img src={aboutimg} alt=""  className='scroll_img'/>
+                <div className='about_img image' ref={imageRef}>
+                    <img src={aboutimg} alt="" style={{ width: '100%' }} className='scroll_img' style={{ width: '100%' }} />
                 </div>
                 <h1 className='about_text'>I'm a UI/UX designer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me. Delivering work within time and budget which meets client’s requirements is our moto.</h1>
             </div>
