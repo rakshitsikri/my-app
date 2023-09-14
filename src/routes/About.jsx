@@ -24,7 +24,7 @@ const About = () => {
               trigger: imageRef.current, // Use the image as the trigger
               start: 'top center',
               end: 'bottom center',
-              scrub: true,
+              scrub: 1,
               pin:false,
             },
           });
@@ -36,7 +36,7 @@ const About = () => {
               trigger: imageRef.current,
               start: 'top center',
               end: 'bottom center',
-              scrub: true,
+              scrub: 1,
               anticipatePin: 1
             },
           });
