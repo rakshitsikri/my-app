@@ -16,7 +16,7 @@ const Home = () => {
                     <div className='col-md-6' >
                         <div className="banner_text">
                             {/* <h4 className="round">Hello, There</h4> */}
-                            <h1 className="fn60">Say Hi, ✌️<br></br><span> from Rakshit</span>,<br></br> UI / UX Designer.</h1>
+                            <h1 className="fn60">Say Hi, ✌️<br></br><span> from Rakshit</span>,<br></br> Frontend Developer.</h1>
                             <p>I design and code beautifully simple things and i love what i do. Just simple like that!</p>
                             <div className="cvbtn">
                                 <a href="/" className="Button_primary mr-3">Download CV</a>

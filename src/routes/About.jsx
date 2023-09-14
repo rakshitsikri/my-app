@@ -25,6 +25,7 @@ const About = () => {
               start: 'top center',
               end: 'bottom center',
               scrub: true,
+              pin:false,
             },
           });
       
@@ -36,6 +37,7 @@ const About = () => {
               start: 'top center',
               end: 'bottom center',
               scrub: true,
+              anticipatePin: 1
             },
           });
       

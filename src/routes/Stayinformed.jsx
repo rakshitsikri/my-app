@@ -10,7 +10,7 @@ const Stayinformed = () => {
             <div className='container'>
                 <div className='stay_main'>
                     <ul>
-                        <li>
+                        <li className='active_li'>
                             <div className='stay_left'>
                                 <h5>13 June 2023</h5>
                             </div>
