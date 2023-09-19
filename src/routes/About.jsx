@@ -25,9 +25,9 @@ const About = () => {
               start: 'top center',
               end: 'bottom center',
               scrub: 1,
-              pin:false,
+              pin:true,
               markers:true,
-              toggleActions: "play none none reset",
+              toggleActions: "play",
             },
           });
       
@@ -40,6 +40,7 @@ const About = () => {
               end: 'bottom center',
               scrub: 1,
               anticipatePin: 1,
+              toggleActions: "play",
             },
           });
       
