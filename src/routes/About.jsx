@@ -26,6 +26,8 @@ const About = () => {
               end: 'bottom center',
               scrub: 1,
               pin:false,
+              markers:true,
+              toggleActions: "play none none reset",
             },
           });
       
@@ -37,7 +39,7 @@ const About = () => {
               start: 'top center',
               end: 'bottom center',
               scrub: 1,
-              anticipatePin: 1
+              anticipatePin: 1,
             },
           });
       
