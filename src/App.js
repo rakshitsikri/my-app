@@ -24,6 +24,7 @@ function App() {
       <About />
       <Portfolio />
       <Stayinformed />
+
       </>
    );
 }

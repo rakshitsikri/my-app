@@ -19,13 +19,12 @@ const About = () => {
         // Define the animation
         const animation = gsap.from(imageRef.current, {
             width: startWidth, // Start with the specified start width
-            duration: 200,
             scrollTrigger: {
               trigger: imageRef.current, // Use the image as the trigger
               start: 'top center',
               end: 'bottom center',
-              scrub: 1,
-              pin:true,
+              scrub: 5,
+              pin:false,
               markers:true,
               toggleActions: "play",
             },
@@ -33,12 +32,12 @@ const About = () => {
       
           // Set the end width using a second animation
           gsap.to(imageRef.current, {
-            width: endWidth,
-            scrollTrigger: {
+              width: endWidth,
+              scrollTrigger: {
               trigger: imageRef.current,
               start: 'top center',
               end: 'bottom center',
-              scrub: 1,
+              scrub: 5,
               anticipatePin: 1,
               toggleActions: "play",
             },
