@@ -188,7 +188,7 @@ nav.navbar {background-color: #FFFFFF0D;backdrop-filter: blur(4px);border-radius
 
 .parallax-background {
   position: absolute;
-  transform: translateZ(-1px) scale(1.5);
+  transform: translateZ(-10rem) scale(1.5);
 }
 
 /* .parallax-content {
