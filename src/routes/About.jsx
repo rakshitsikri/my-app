@@ -22,7 +22,7 @@ const About = () => {
             scrollTrigger: {
               trigger: imageRef.current, // Use the image as the trigger
               start: 'top center',
-              end: 'bottom center',
+              end: 'center center',
               scrub: 5,
               pin:false,
               markers:true,
@@ -36,7 +36,7 @@ const About = () => {
               scrollTrigger: {
               trigger: imageRef.current,
               start: 'top center',
-              end: 'bottom center',
+              end: 'center center',
               scrub: 5,
               anticipatePin: 1,
               toggleActions: "play",
