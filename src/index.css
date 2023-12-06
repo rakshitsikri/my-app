@@ -168,13 +168,14 @@ nav.navbar {background-color: #FFFFFF0D;backdrop-filter: blur(4px);border-radius
 .stay_main ul li>div:last-child{width: 40%;}
 .stay_right>h3{color: #fff;}
 .stay_right>a{color: #fff;text-decoration: none;}
-.portfolio_name{font-size: 58px;color: #fff;text-decoration: none;font-weight: bold;display: block;position: relative;}
+.portfolio_name{font-size: 58px;color: #fff;text-decoration: none;font-weight: bold;display: block;position: relative;width: fit-content;margin: 0 auto;}
 .clr_white{color: #fff;}
-.stay_right p{display:none}
+.stay_right p{display:none;transition: all .5s ease;}
 .active_li .stay_right p{display: block;}
-.portfolio_name:hover .portfolio_img{opacity: 1;}
-.portfolio_img {position: absolute;width: 350px;height: 400px;left: 50%;top: 0;transform: translateX(-50%);opacity: 0;z-index: 99999;}
+.portfolio_name:hover .portfolio_img{opacity: 1;visibility: visible;}
+.portfolio_img {position: absolute;width: 350px;height: 400px;left: 50%;top: 0;transform: translateX(-50%);opacity: 0;z-index: 99999;visibility: hidden;}
 .portfolio_img img{width: 100%;height: 100%;object-fit: cover;}
+.text-animtn.title-selected{display: block;}
 
 
 

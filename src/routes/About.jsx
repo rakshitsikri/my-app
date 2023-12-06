@@ -21,9 +21,9 @@ const About = () => {
             width: startWidth, // Start with the specified start width
             scrollTrigger: {
               trigger: imageRef.current, // Use the image as the trigger
-              start: 'top center',
-              end: 'center center',
-              scrub: 5,
+              start: '0% 50%',
+              end: '50% 50%',
+              scrub: true,
               pin:false,
               markers:true,
               toggleActions: "play",
@@ -71,6 +71,10 @@ const About = () => {
               }
             );
           }, []);
+
+
+
+          
 
       
 
