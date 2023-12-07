@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger)
 const Stayinformed = () => {
 
     useEffect(() => {
-        const headings = gsap.utils.toArray(".text-animtn");
+        const headings = gsap.utils.toArray(".expander");
         headings.forEach((title) => {
             gsap.to(title, {
             scrollTrigger: {
@@ -17,7 +17,7 @@ const Stayinformed = () => {
                 start: "top center",
                 end: "+=200",
                 scrub: 5,
-                markers: true,
+                markers: false,
                 toggleClass:  "title-selected",
             }
             })
@@ -41,7 +41,9 @@ const Stayinformed = () => {
                             </div>
                             <div className='stay_right'>
                                 <h3>The Art Of Web Animation</h3>
-                                <p className='text-animtn'>Explore the creative and technical aspects of web animation, and discover how it can enhance user engagement and bring your website to life.</p>
+                                <div className='expander'>
+                                    <p className='text-animtn'>Explore the creative and technical aspects of web animation, and discover how it can enhance user engagement and bring your website to life.</p>
+                                </div>
                                 <a href="/">Read article</a>
                             </div>
                         </li>
@@ -54,7 +56,9 @@ const Stayinformed = () => {
                             </div>
                             <div className='stay_right'>
                                 <h3>SEO Optimization Tips</h3>
-                                <p className='text-animtn'>Unlock the secrets of effective SEO optimization with practical tips and strategies to improve your website's visibility and organic search rankings.</p>
+                                <div className='expander'>
+                                    <p className='text-animtn'>Unlock the secrets of effective SEO optimization with practical tips and strategies to improve your website's visibility and organic search rankings.</p>
+                                </div>
                                 <a href="/">Read article</a>
                             </div>
                         </li>
@@ -67,7 +71,9 @@ const Stayinformed = () => {
                             </div>
                             <div className='stay_right'>
                                 <h3>Web Design Trends 2023</h3>
-                                <p className='text-animtn'>Stay ahead of the curve with an overview of the latest web design trends shaping hte digital landscape 2023, and learn how to implement them in ypur projects.</p>
+                                <div className='expander'>
+                                    <p className='text-animtn'>Stay ahead of the curve with an overview of the latest web design trends shaping hte digital landscape 2023, and learn how to implement them in ypur projects.</p>
+                                </div>
                                 <a href="/">Read article</a>
                             </div>
                         </li>
@@ -80,7 +86,9 @@ const Stayinformed = () => {
                             </div>
                             <div className='stay_right'>
                                 <h3>Web Design Trends 2023</h3>
-                                <p className='text-animtn'>Dive into the fundamentals of javascript and gain mastery over the core concepts, syntax, and techniques to build dynamic and interactive web experience.</p>
+                                <div className='expander'>
+                                    <p className='text-animtn'>Dive into the fundamentals of javascript and gain mastery over the core concepts, syntax, and techniques to build dynamic and interactive web experience.</p>
+                                </div>
                                 <a href="/">Read article</a>
                             </div>
                         </li>

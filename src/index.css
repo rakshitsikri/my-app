@@ -170,12 +170,21 @@ nav.navbar {background-color: #FFFFFF0D;backdrop-filter: blur(4px);border-radius
 .stay_right>a{color: #fff;text-decoration: none;}
 .portfolio_name{font-size: 58px;color: #fff;text-decoration: none;font-weight: bold;display: block;position: relative;width: fit-content;margin: 0 auto;}
 .clr_white{color: #fff;}
-.stay_right p{display:none;transition: all .5s ease;}
+.expander{display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 1s;transition: all .5s ease;}
 .active_li .stay_right p{display: block;}
 .portfolio_name:hover .portfolio_img{opacity: 1;visibility: visible;}
 .portfolio_img {position: absolute;width: 350px;height: 400px;left: 50%;top: 0;transform: translateX(-50%);opacity: 0;z-index: 99999;visibility: hidden;}
 .portfolio_img img{width: 100%;height: 100%;object-fit: cover;}
-.text-animtn.title-selected{display: block;}
+.expander.title-selected{grid-template-rows: 1fr;}
+
+.text-animtn{
+  min-height: 0;
+  transition: visibility 1s;
+  visibility: hidden;
+}
+.expander.title-selected .text-animtn{visibility: visible;}
 
 
 

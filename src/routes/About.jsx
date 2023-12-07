@@ -25,7 +25,7 @@ const About = () => {
               end: '50% 50%',
               scrub: true,
               pin:false,
-              markers:true,
+              markers:false,
               toggleActions: "play",
             },
           });
