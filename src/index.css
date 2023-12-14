@@ -181,7 +181,7 @@ nav.navbar {background-color: #FFFFFF0D;backdrop-filter: blur(4px);border-radius
 
 .text-animtn{
   min-height: 0;
-  transition: visibility 1s;
+  /* transition: visibility 1s; */
   visibility: hidden;
 }
 .expander.title-selected .text-animtn{visibility: visible;}
