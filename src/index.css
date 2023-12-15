@@ -176,7 +176,7 @@ nav.navbar {background-color: #FFFFFF0D;backdrop-filter: blur(4px);border-radius
 .active_li .stay_right p{display: block;}
 .portfolio_name:hover .portfolio_img{opacity: 1;visibility: visible;}
 .portfolio_img {position: absolute;width: 350px;height: 400px;left: 50%;top: 0;transform: translateX(-50%);opacity: 0;z-index: 99999;visibility: hidden;}
-.portfolio_img img{width: 100%;height: 100%;object-fit: cover;}
+.portfolio_img img{width: 100%;height: 100%;object-fit: cover;object-position: left;}
 .expander.title-selected{grid-template-rows: 1fr;}
 
 .text-animtn{

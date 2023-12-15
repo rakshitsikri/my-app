@@ -41,43 +41,43 @@ const Portfolio = () => {
                             <a href="/" className='portfolio_name'>
                                 <span>Forms Design Studio</span>
                                     <div className='portfolio_img parallax-content' style={{ transform: `translate(-${position.x / 10}px, -${position.y / 10}px)`,}}>
-                                        <img src='https://www.indiainternets.com/images/image-portfolio/1875737343_museo-thamb.jpg' />
+                                        <img src='https://www.indiainternets.com/images/image-portfolio/1100402303_formsdesign-thamb.jpg' />
                                     </div>
                                 </a>
                             <a href="/" className='portfolio_name'>
                                 <span>IOC Phinergy</span>
                                     <div className='portfolio_img parallax-content' style={{ transform: `translate(-${position.x / 10}px, -${position.y / 10}px)`,}}>
-                                        <img src='https://www.indiainternets.com/images/image-portfolio/1875737343_museo-thamb.jpg' />
+                                        <img src='https://www.indiainternets.com/images/image-portfolio/1780970128_iocphinergy-thamb.jpg' />
                                     </div>
                                 </a>
                             <a href="/" className='portfolio_name'>
                                 <span>Prop Bridge</span>
                                     <div className='portfolio_img parallax-content' style={{ transform: `translate(-${position.x / 10}px, -${position.y / 10}px)`,}}>
-                                        <img src='https://www.indiainternets.com/images/image-portfolio/1875737343_museo-thamb.jpg' />
+                                        <img src='https://www.indiainternets.com/images/image-portfolio/1557036591_propbridge-thamb.jpg' />
                                     </div>
                                 </a>
                             <a href="/" className='portfolio_name'>
                                 <span>Rise International</span>
                                     <div className='portfolio_img parallax-content' style={{ transform: `translate(-${position.x / 10}px, -${position.y / 10}px)`,}}>
-                                        <img src='https://www.indiainternets.com/images/image-portfolio/1875737343_museo-thamb.jpg' />
+                                        <img src='https://www.indiainternets.com/images/image-portfolio/1584416769_riseinfrainternational-thamb.jpg' />
                                     </div>
                                 </a>
                             <a href="/" className='portfolio_name'>
                                 <span>NPI Group</span>
                                     <div className='portfolio_img parallax-content' style={{ transform: `translate(-${position.x / 10}px, -${position.y / 10}px)`,}}>
-                                        <img src='https://www.indiainternets.com/images/image-portfolio/1875737343_museo-thamb.jpg' />
+                                        <img src='https://www.indiainternets.com/images/image-portfolio/494227768_npigroupindia-thamb.jpg' />
                                     </div>
                                 </a>
                             <a href="/" className='portfolio_name'>
                                 <span>Riglam School</span>
                                     <div className='portfolio_img parallax-content' style={{ transform: `translate(-${position.x / 10}px, -${position.y / 10}px)`,}}>
-                                        <img src='https://www.indiainternets.com/images/image-portfolio/1875737343_museo-thamb.jpg' />
+                                        <img src='https://www.indiainternets.com/images/image-portfolio/504428561_riglamschool-thamb.jpg' />
                                     </div>
                                 </a>
                             <a href="/" className='portfolio_name'>
                                 <span>Dreamscape</span>
                                     <div className='portfolio_img parallax-content' style={{ transform: `translate(-${position.x / 10}px, -${position.y / 10}px)`,}}>
-                                        <img src='https://www.indiainternets.com/images/image-portfolio/1875737343_museo-thamb.jpg' />
+                                        <img src='https://www.indiainternets.com/images/image-portfolio/680403573_dreamscape-thamb.jpg' />
                                     </div>
                                 </a>
                         </div>
