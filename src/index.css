@@ -207,3 +207,19 @@ nav.navbar {background-color: #FFFFFF0D;backdrop-filter: blur(4px);border-radius
   padding: 20px;
   color: white;
 } */
+
+
+
+@media (max-width: 767px) {
+  .navbar-nav{display: none!important;}
+  .collapse:not(.show){display: flex!important;}
+  .baner_sec{padding-top: 4rem;}
+  section{overflow-x: hidden;}
+  .about_text{font-size: 22px!important;}
+  .portfolio_name{font-size: 32px;}
+  .stay_main ul li>div:last-child{width: 100%;margin-top: 2rem;}
+  .stay_main ul li>div{width: calc(100% / 2);}
+  .navbar a{padding: .5rem;}
+  .fn60 {font-size: 38px;}
+  .banner_text{margin-top: 1rem;}
+}
