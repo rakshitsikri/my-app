@@ -20,7 +20,7 @@ const Home = () => {
                             <h1 className="fn60">Say Hi, ✌️<br></br><span> from Rakshit</span>,<br></br> Frontend Developer.</h1>
                             <p>I design and code beautifully simple things and i love what i do. Just simple like that!</p>
                             <div className="cvbtn">
-                                <a href="{resume}" target="_blank" className="Button_primary mr-3">Download CV</a>
+                                <a href="../images/resume.pdf" target="_blank" className="Button_primary mr-3">Download CV</a>
                                 <a href="#" className="btn_contact">Let's Talk</a>
                             </div>
                         </div>
