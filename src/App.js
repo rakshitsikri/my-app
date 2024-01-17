@@ -8,6 +8,7 @@ import Portfolio from './routes/Portfolio';
 import Stayinformed from './routes/Stayinformed';
 import Navbar from './routes/Navbar';
 import {Route, Routes} from "react-router-dom";
+import Contact from './routes/Contact';
 
 
 
@@ -20,11 +21,12 @@ function App() {
          <Route path="about" element={<About Us />} />
          <Route path="portfolio" element={<Portfolio />} />
          <Route path="stayinformed" element={<Stayinformed />} />
+         <Route path="contact" element={<Contact />} />
       </Routes>
       <About />
       <Portfolio />
       <Stayinformed />
-
+      <Contact />
       </>
    );
 }
