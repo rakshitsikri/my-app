@@ -185,7 +185,30 @@ nav.navbar {background-color: #FFFFFF0D;backdrop-filter: blur(4px);border-radius
   visibility: hidden;
 }
 .expander.title-selected .text-animtn{visibility: visible;}
-
+.button__flair:before { aspect-ratio: 1; background: linear-gradient(90deg,#fffc91,#f4f2b7 50%,#fffc91); border-radius: 50%; content: ""; display: block; left: 0; pointer-events: none; position: absolute; top: 0; transform: translate(-50%,-50%); width: 205%; }
+.button__flair { bottom: 0; left: 0; pointer-events: none; position: absolute; right: 0; top: 0; }
+.Button_primary  {
+  align-items: center;
+  background: 0 0;
+  border: none;
+  border-radius: 6.25rem;
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 600;
+  justify-content: center;
+  letter-spacing: -.01em;
+  line-height: 1.04545;
+  overflow: hidden;
+  padding: 0.9375rem 1.5rem;
+  position: relative;
+  text-decoration: none;
+}
+.Button_primary:hover{color: #000;}
+.button__label {
+  position: relative;
+  text-align: center;
+  transition: color 50ms var(--ease-in-out-quart);
+}
 
 
 

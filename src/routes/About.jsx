@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 const About = () => {
 
   const imageRef = useRef(null); // Create a ref for the image element
-  const startWidth = 500; // Specify the start width
+  const startWidth = '500'; // Specify the start width
   const endWidth = '100%'; // Specify the end width
 
     useEffect(() => {
@@ -21,11 +21,11 @@ const About = () => {
             width: startWidth, // Start with the specified start width
             scrollTrigger: {
               trigger: imageRef.current, // Use the image as the trigger
-              start: '0% 50%',
+              start: '0% 0%',
               end: '50% 50%',
               scrub: true,
               pin:false,
-              markers:false,
+              markers:true,
               toggleActions: "play",
             },
           });
@@ -35,8 +35,9 @@ const About = () => {
               width: endWidth,
               scrollTrigger: {
               trigger: imageRef.current,
-              start: 'top center',
-              end: 'center center',
+              start: 'top top',
+              end: 'top center',
+              pin:false,
               scrub: 5,
               anticipatePin: 1,
               toggleActions: "play",
@@ -56,14 +57,15 @@ const About = () => {
               textElement,
               {
                 opacity: 0,
-                y: 100,
+                y: 0,
               },
               {
                 opacity: 1,
-                y: 0,
+                y: -100,
                 duration: 1,
                 scrollTrigger: {
                   trigger: textElement,
+                  pin:false,
                   start: 'top center', // When to start the animation
                   end: 'bottom center', // When to end the animation
                   scrub: true, // Smoothly animates the text as you scroll
