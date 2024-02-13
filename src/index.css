@@ -99,12 +99,47 @@ a.navbar-brand {
 h1 span{color:#fffc91;}
 .bggray{background-color: #fff;}
 .btn_contact{--tw-text-opacity: 1;margin-left: 15px;
-  color: #000;
-  background: linear-gradient(90deg,#fffc91,#f4f2b7 50%,#fffc91);
+  color: #fffc91;
+  border:1px solid #fffc91;
   background-size: 200% 100%;
   padding: 0.7rem 1.75rem;
   text-decoration: none;
-  border-radius: 5px;font-weight: bold;}
+  border-radius: 5px;
+  font-weight: bold;
+  position: relative;
+}
+.btn_contact::after, .btn_contact::before{
+  position: absolute;
+  content: "";
+  transform: rotate(0);
+  border: solid;
+  display: inline-block;
+  padding: 3px;
+  transition: all .7s ease-out;
+}
+.btn_contact:before{
+  top: -7px;
+  left: -7px;
+  border-width: 0 1px 1px 0;
+  border-color: #fffc91;
+}
+.btn_contact:after{
+  bottom: -7px;
+  right: -7px;
+  border-width: 1px 0 0 1px;
+  border-color: #fffc91;
+}
+.btn_contact:hover{
+  color: #fffc91;
+}
+.btn_contact:hover:before{
+  left: 100%;
+    transform: rotate(90deg);
+}
+.btn_contact:hover:after{
+  right: 100%;
+  transform: rotate(90deg);
+}
 .section-container {
     max-width: 1536px;
 }
@@ -112,11 +147,13 @@ h1{font-size: 2.75rem;line-height: 1.25;}
 section{padding: 6.5rem 0;}
 .heading{font-weight: 500;font-size: 50px;color: #fff;}
 .about_text{
-  font-size: 50px!important;
+  font-size: 36px!important;
   background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 500;
+  /* position: absolute; */
+  padding: 2rem 4rem;
 }
 p{font-size: 20px;}
 .contactno{text-decoration: none;}
@@ -191,7 +228,7 @@ nav.navbar {background-color: #FFFFFF0D;backdrop-filter: blur(4px);border-radius
   align-items: center;
   background: 0 0;
   border: none;
-  border-radius: 6.25rem;
+  /* border-radius: 6.25rem; */
   cursor: pointer;
   display: inline-flex;
   font-weight: 600;

@@ -30,7 +30,7 @@ const Contact = () => {
             <div className='container'>
                 <div className='row'>
                     <div className='col-md-12'>
-                        <h4 className='text-center mb-3 clr_white'>[My Work]</h4>
+                        <h4 className='text-center mb-3 clr_white'>[Contact Us]</h4>
                         <div className='project_name text-center'>
                             <a href="/" className='portfolio_name'>
                                 <span>Museo Camera</span>
