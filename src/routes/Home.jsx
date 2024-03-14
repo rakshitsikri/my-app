@@ -2,7 +2,29 @@ import react from "react";
 import web from "../images/webdesign.gif";
 import resume from "../images/resume.pdf";
 
+function getMousePositionRelativeToElement(event, elementClassName) {
+    var mouseX, mouseY;
+    if (event.pageX || event.pageY) {
+        mouseX = event.pageX;
+        mouseY = event.pageY;
+    } else {
+        mouseX = event.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+        mouseY = event.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+    }
+    var targetElement = document.querySelector("." + elementClassName);
+    var rect = targetElement.getBoundingClientRect();
+    var relativeX = mouseX - rect.left;
+    var relativeY = mouseY - rect.top;
+    return { x: relativeX, y: relativeY };
+}
 
+document.addEventListener("mousemove", function(event) {
+    var mousePos = getMousePositionRelativeToElement(event, "Button_primary");
+    
+    // Set the mousePos.x and mousePos.y as CSS variables on the body element
+    document.body.style.setProperty('--mouse-pos-x', mousePos.x + 'px');
+    document.body.style.setProperty('--mouse-pos-y', mousePos.y + 'px');
+});
 
 const Home = () => {
     return (

@@ -22,9 +22,9 @@ const About = () => {
         trigger: containerRef.current,
         start: '0% 0%',
         end: '50% 50%',
-        markers:true,
+        markers:false,
         pin: true,
-        scrub: 2, 
+        scrub: 5, 
       },
     });
   
