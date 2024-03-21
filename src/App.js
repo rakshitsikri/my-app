@@ -9,6 +9,7 @@ import Stayinformed from './routes/Stayinformed';
 import Navbar from './routes/Navbar';
 import {Route, Routes} from "react-router-dom";
 import Contact from './routes/Contact';
+import Footer from './routes/Footer';
 
 
 
@@ -22,11 +23,13 @@ function App() {
          <Route path="portfolio" element={<Portfolio />} />
          <Route path="stayinformed" element={<Stayinformed />} />
          <Route path="contact" element={<Contact />} />
+         <Route path="footer" element={<Footer />} />
       </Routes>
       <About />
       <Portfolio />
       <Stayinformed />
       <Contact />
+      <Footer />
       </>
    );
 }

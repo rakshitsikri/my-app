@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import './Parallax.css';
+import contact from "../images/contact.webp";
 
 
 
@@ -11,10 +11,10 @@ const Contact = () => {
     <>
         <section className='bg_white'>
             <div className="container">
-                <h4 class="text-center mb-3">[Contact Us]</h4>
+                <h4 class="text-center mb-5">[Contact Us]</h4>
                 <div className='row'>
                     <div className='col-md-6'>
-
+                    <img src={contact} className="img-fluid animated" />
                     </div>
                     <div className='col-md-6'>
                         <h2 className='contact_heading'>Have Any Project on Your Mind?</h2>
