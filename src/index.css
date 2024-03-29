@@ -157,7 +157,7 @@ section{padding: 6.5rem 0;}
 p{font-size: 20px;}
 .contactno{text-decoration: none;}
 .main_menu{padding: 30px 40px 0px 40px;}
-nav.navbar {background-color: #FFFFFF0D;backdrop-filter: blur(4px);border-radius: 40px 40px 40px 40px;border: 2px solid #FFFFFF33;padding: 0;}
+nav.navbar {background-color: #FFFFFF0D;backdrop-filter: blur(4px);border-radius: 40px 40px 40px 40px;border: 2px solid #FFFFFF33;padding: 0;position: fixed; width: 84vw; left: 50%; transform: translateX(-50%); z-index: 9999;}
 .baner_sec{padding-top: 9rem;}
 .banner_text{color: #fff;font-family: "Unbounded", sans-serif;}
 .banner_text h1{margin-bottom: 1rem;}
