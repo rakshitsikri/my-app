@@ -291,3 +291,4 @@ nav.navbar {background-color: #00000063;backdrop-filter: blur(4px);border-radius
 .ht100{height: 100px!important;}
 .snd_btn{--tw-text-opacity: 1; margin-top: 2rem;display: inline-block; color: #fff;background-color: #000; border: 1px solid #000; background-size: 200% 100%; padding: 0.7rem 1.75rem; text-decoration: none; border-radius: 5px; font-weight: bold; position: relative;}
 footer p{padding-top: 10px; padding-bottom: 10px; border-top: 1px solid rgba(255, 255, 255, .1); color: #ffffffbf; font-size: 14px;text-align: center;margin-bottom: 0;font-family: "Unbounded", Sans-serif;}
+#container{height: 80vh;}
