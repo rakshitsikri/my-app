@@ -24,7 +24,7 @@ function Box({ index }) {
 
     box.textContent = [`Box ${index + 1}`];
 
-    box.tl = gsap.timeline({ paused: true, defaults: { immediateRender: true } })
+    box.tl = gsap.timeline({  defaults: { immediateRender: true } })
       .fromTo(box, {
         scale: 0.3,
         rotationX: (index / 30) * 360,
