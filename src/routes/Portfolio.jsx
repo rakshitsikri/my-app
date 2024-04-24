@@ -2,79 +2,89 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger);
-
-function Box({ index }) {
-  const boxRef = useRef(null);
+const MyComponent = () => {
+  const containerRef = useRef(null);
+  const scrollDistRef = useRef(null);
 
   useEffect(() => {
-    const box = boxRef.current;
+    gsap.registerPlugin(ScrollTrigger);
 
-    gsap.set(box, {
-      left: '50%',
-      top: '50%',
-      width: '100%',
-      height: 300,
-      borderRadius: '20%',
-      backgroundColor: '#e0e0e0',
-      textAlign: 'center',
-      lineHeight: '300px',
-      fontSize: '12rem'
+    const container = containerRef.current;
+    const scrollDist = scrollDistRef.current;
+    const boxes = [];
+
+    // Define an array of random text options
+    const randomTextOptions = ["Museo Camera", "FGIPL", "NPI Group"];
+
+    const makeBoxes = (n) => {
+      for (let i = 0; i < n; i++) {
+        const b = document.createElement('div');
+        boxes.push(b);
+        container.appendChild(b);
+      }
+    }
+
+    makeBoxes(30);
+
+    gsap.to(container, 0.4, { perspective: 200, backgroundColor: '#fff' });
+
+    boxes.forEach((b, i) => {
+      const randomText = randomTextOptions[Math.floor(Math.random() * randomTextOptions.length)];
+
+      gsap.set(b, {
+        left: '50%',
+        top: '50%',
+        margin: -300,
+        width: 600,
+        height: 400,
+        backgroundColor: '#fff',
+        color: '#000',
+        textAlign: 'center',
+        lineHeight: '300px',
+        fontSize: '6rem',
+        clearProps: 'transform',
+        backfaceVisibility: 'hidden',
+        innerHTML: randomText
+      });
+
+      b.tl = gsap.timeline({ paused: true, defaults: { immediateRender: true } })
+        .fromTo(b, {
+          scale: 0.3,
+          rotationX: i / boxes.length * 360,
+          transformOrigin: "50% 50% -500%"
+        }, {
+          rotationX: '+=360',
+          ease: 'none'
+        })
+        .timeScale(0.05);
+
+      b.addEventListener('mouseover', (e) => { gsap.to(e.currentTarget, { opacity: 0.5, scale: 0.36, duration: 0.4, ease: 'expo' }); });
+      b.addEventListener('mouseout', (e) => { gsap.to(e.currentTarget, { opacity: 1, scale: 0.3, duration: 0.2, ease: 'back.out(3)', overwrite: 'auto' }); });
+      b.addEventListener('click', (e) => { window.open(e.currentTarget.style.backgroundImage.slice(5, -2), '_blank'); });
     });
 
-    box.textContent = [`Box ${index + 1}`];
-
-    box.tl = gsap.timeline({  defaults: { immediateRender: true } })
-      .fromTo(box, {
-        scale: 0.3,
-        rotationX: (index / 30) * 360,
-        transformOrigin: '50% 50% -500%'
-      }, {
-        rotationX: '+=360',
-        ease: 'none'
-      })
-      .timeScale(0.05);
-
-    box.addEventListener('mouseover', () => { gsap.to(box, { opacity: 0.5, scale: 0.36, duration: 0.4, ease: 'expo' }); });
-    box.addEventListener('mouseout', () => { gsap.to(box, { opacity: 1, scale: 0.3, duration: 0.2, ease: 'back.out(3)', overwrite: 'auto' }); });
-    box.addEventListener('click', () => { alert(`Clicked on Box ${index + 1}`); });
-
-    return () => {
-      box.removeEventListener('mouseover', () => { gsap.to(box, { opacity: 0.5, scale: 0.36, duration: 0.4, ease: 'expo' }); });
-      box.removeEventListener('mouseout', () => { gsap.to(box, { opacity: 1, scale: 0.3, duration: 0.2, ease: 'back.out(3)', overwrite: 'auto' }); });
-      box.removeEventListener('click', () => { alert(`Clicked on Box ${index + 1}`); });
-    };
-  }, [index]);
-
-  return <div ref={boxRef}></div>;
-}
-
-function BoxesContainer() {
-  useEffect(() => {
-    const c = document.getElementById('container');
-
-    gsap.to(c, 0.4, { perspective: 200, backgroundColor: '#fff' });
-
     ScrollTrigger.create({
-      trigger: '#scrollDist',
-      start: 'top top',
-      end: 'bottom bottom',
+      trigger: scrollDist,
+      start: "top top",
+      end: "bottom bottom",
       onRefresh: self => {
-        boxes.forEach((b, i) => { gsap.set(b.tl, { progress: self.progress }); });
+        boxes.forEach((b, i) => { gsap.set(b.tl, { progress: self.progress }); })
       },
       onUpdate: self => {
-        boxes.forEach((b, i) => { gsap.to(b.tl, { progress: self.progress }); });
+        boxes.forEach((b, i) => { gsap.to(b.tl, { progress: self.progress }); })
       }
     });
   }, []);
 
-  const boxes = Array.from({ length: 30 }, (_, i) => <Box key={i} index={i} />);
-
-  return <div id="container">{boxes}</div>;
+  return (
+    <div className='scrolldiv'>
+      <div id="scrollDist" ref={scrollDistRef}></div>
+      <div id="container" ref={containerRef}></div>
+    </div>
+  );
 }
 
-export default BoxesContainer;
-
+export default MyComponent;
 
 
 
