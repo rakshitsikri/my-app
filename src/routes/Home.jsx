@@ -42,8 +42,8 @@ const Home = () => {
                             <p>I design and code beautifully simple things and i love what i do. Just simple like that!</p>
                             <div className="cvbtn">
                                 <a href={resume} target="_blank" className="Button_primary mr-3">
-                                    <span class="button__flair"></span>
-                                    <span class="button__label">Download CV</span>
+                                    <span className="button__flair"></span>
+                                    <span className="button__label">Download CV</span>
                                 </a>
                                 <a href="#" className="btn_contact">Let's Talk</a>
                             </div>

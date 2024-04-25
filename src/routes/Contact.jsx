@@ -11,7 +11,7 @@ const Contact = () => {
     <>
         <section className='bg_white'>
             <div className="container">
-                <h4 class="text-center mb-5">[Contact Us]</h4>
+                <h4 className="text-center mb-5">[Contact Us]</h4>
                 <div className='row'>
                     <div className='col-md-6'>
                     <img src={contact} className="img-fluid animated" />
@@ -23,29 +23,29 @@ const Contact = () => {
                             <li>
                                 <div className="form-floating mb-3">
                                     <input type="text" className="form-control" id="floatingInput" placeholder="name@example.com" />
-                                    <label for="floatingInput">Full name</label>
+                                    <label htmlFor="floatingInput">Full name</label>
                                 </div>
                             </li>
                             <li>
                                 <div className="form-floating mb-3">
                                     <input type="text" className="form-control" id="floatingInput" placeholder="name@example.com" />
-                                    <label for="floatingInput">Email address</label>
+                                    <label htmlFor="floatingInput">Email address</label>
                                 </div>
                             </li>
                             <li className='w-100'>
                                 <div className="form-floating mb-3">
                                     <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
-                                    <label for="floatingInput">Website link</label>
+                                    <label htmlFor="floatingInput">Website link</label>
                                 </div>
                             </li>
                             <li className='w-100'>
                                 <div className="form-floating mb-3">
                                     <input type="text" className="form-control ht100" id="floatingInput" placeholder="name@example.com" />
-                                    <label for="floatingInput">How can we help you?</label>
+                                    <label htmlFor="floatingInput">How can we help you?</label>
                                 </div>
                             </li>
                         </ul>
-                        <a href="#" class="snd_btn">Send Message</a>
+                        <a href="#" className="snd_btn">Send Message</a>
                     </div>
                 </div>
             </div>

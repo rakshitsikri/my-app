@@ -34,14 +34,15 @@ const MyComponent = () => {
       gsap.set(b, {
         left: '50%',
         top: '50%',
-        margin: -300,
-        width: 600,
+        margin: -350,
+        width: 700,
         height: 400,
         backgroundColor: '#fff',
         color: '#000',
         textAlign: 'center',
         lineHeight: '300px',
         fontSize: '6rem',
+        fontWeight:800,
         clearProps: 'transform',
         backfaceVisibility: 'hidden',
         innerHTML: randomText
