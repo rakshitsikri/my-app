@@ -14,7 +14,7 @@ const MyComponent = () => {
     const boxes = [];
 
     // Define an array of random text options
-    const randomTextOptions = ["Museo Camera", "FGIPL", "NPI Group"];
+    const randomTextOptions = ["Museo Camera", "FGIPL", "NPI Group", "Forms Design Studio", "IOC Phhinergy", "Prop Bridge", "Rise Innternational"];
 
     const makeBoxes = (n) => {
       for (let i = 0; i < n; i++) {
@@ -33,14 +33,14 @@ const MyComponent = () => {
 
       gsap.set(b, {
         left: '50%',
-        top: '50%',
-        margin: -350,
-        width: 700,
-        height: 400,
+        top: '130%',
+        margin: -700,
+        width: 1400,
+        height: 200,
         backgroundColor: '#fff',
         color: '#000',
         textAlign: 'center',
-        lineHeight: '300px',
+        lineHeight: '400px',
         fontSize: '6rem',
         fontWeight:800,
         clearProps: 'transform',
